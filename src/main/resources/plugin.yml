@@ -1,0 +1,26 @@
+name: JVMItems
+version: '1.0.0'
+main: com.jvmitems.JVMItems
+description: Plugin de criacao de itens customizados (dano, armadura, efeitos ao clicar e ao acertar)
+website: https://github.com/
+author: JVMItems
+
+commands:
+  jvmitems:
+    aliases: [jvmi, jvi]
+    description: Gerencia os itens customizados do JVMItems
+    usage: /jvmitems help
+
+permissions:
+  jvmitems.admin:
+    description: Permite criar, editar e remover itens customizados
+    default: op
+  jvmitems.give:
+    description: Permite dar itens customizados a jogadores
+    default: op
+  jvmitems.*:
+    description: Acesso total ao JVMItems
+    default: op
+    children:
+      jvmitems.admin: true
+      jvmitems.give: true

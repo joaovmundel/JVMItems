@@ -1,0 +1,38 @@
+# JVMItems - configuracoes gerais
+prefix: "&8[&6JVMItems&8] &r"
+
+# Cooldown padrao (em segundos) usado quando um item nao define o seu proprio
+default-cooldown: 3
+
+# Protecoes contra griefing causado pelos Powers. Com isso ligado, nada que um
+# Power lanca (flecha, bola de fogo, bola de neve, raio) quebra blocos, comeca
+# fogo, ativa botao/placa de pressao/tripwire/target block ou destroi
+# quadro/moldura/barco. O dano em jogadores e mobs continua normal.
+# Desligue so se o servidor realmente quiser que os itens alterem o mundo.
+anti-grief: true
+
+# Projeteis lancados pelos Powers
+projectiles:
+  # Permitir que o jogador recolha as flechas do chao
+  allow-pickup: false
+  # Apagar o projetil assim que ele acerta algo (evita flecha cravada no chao)
+  remove-on-hit: true
+  # Tempo (em segundos) ate o projetil sumir sozinho se nao acertar nada
+  # (0 = sem limite, deixa o Minecraft cuidar disso)
+  lifetime-seconds: 20
+
+messages:
+  no-permission: "&cVoce nao tem permissao para fazer isso."
+  item-not-found: "&cItem '%id%' nao existe."
+  item-created: "&aItem '%id%' criado com sucesso."
+  item-deleted: "&aItem '%id%' removido."
+  item-already-exists: "&cJa existe um item com o id '%id%'."
+  item-given: "&aVoce deu o item '%id%' para %player%."
+  item-received: "&aVoce recebeu o item '%id%'."
+  cooldown: "&cAguarde &e%segundos%s &cpara usar esse item novamente."
+  reloaded: "&aConfiguracoes e itens recarregados."
+  usage: "&cUso: %usage%"
+  invalid-number: "&cValor numerico invalido: %valor%"
+  invalid-material: "&cMaterial invalido: %material%"
+  invalid-enchantment: "&cEncantamento invalido: %enchant%"
+  invalid-potion: "&cEfeito de pocao invalido: %potion%"
